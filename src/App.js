@@ -13,16 +13,12 @@ function App() {
         <BrowserRouter>
           <div>
             <Link to="/">Home</Link>
-
             <Link to="/fruits">Fruit</Link>
-
             <Link to="/fruits/form"> Fruit Form</Link>
-
             <Link to="/fruits/list">Fruit Lists</Link>
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
-
             <Route path="/fruits" element={<Fruits />}>
               <Route path="form" element={<AddFruit />} />
               <Route path="list" element={<List />} />
